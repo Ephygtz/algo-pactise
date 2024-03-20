@@ -15,16 +15,21 @@ console.log(reverseInt(-43));
 console.log("====================================== \n");
 
 //given a string, return a new string with the reversed order of character
+
 //try with a for loop(decremental)
+function reverseStr(str){
+    let reversed = "";
+    for(let i=str.length-1; i >=0; i--){
+        reversed += str[i];
+    }
 
-// function reverseStr(str){
-//     let reversed = "";
-//     for(let i=str.length-1; i >=0; i--){
-//         reversed += str[i];
-//     }
+    return reversed;
+}
 
-//     return reversed;
-// }
+console.log(reverseStr("Hello"));
+
+console.log(reverseStr("using decremental for loop"));
+console.log("====================================== \n");
 
 //try with a for loop(incremental)
 function reverseStr(str){
@@ -37,7 +42,7 @@ function reverseStr(str){
 }
 console.log(reverseStr("Hello"));
 
-console.log(reverseStr("using for loop"));
+console.log(reverseStr("using incremental for loop"));
 console.log("====================================== \n");
 
 //try with an advanced for loop
@@ -51,4 +56,4 @@ function reverseStrAdvFor(str){
 
 console.log(reverseStrAdvFor("Hello"));
 
-console.log(reverseStrAdvFor("using for loop"));
+console.log(reverseStrAdvFor("using advanced for loop"));
