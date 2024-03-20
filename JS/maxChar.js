@@ -10,6 +10,7 @@ function maxChar(str) {
     let maxChar ="";
     //loop through the string
     for(let char of str){
+        //check if char is present in map and increment it
         if(charMap[char]) {
             charMap[char] = charMap[char] + 1;
         }else {
