@@ -8,7 +8,7 @@ public class Fib{
        System.out.println("Fibonaci sequence is : " + fibonacci(30));
        System.out.println("Fib sequence is : " + fib(30));
     }
-
+    //using array
     public static int fibonacci(int n) {
         if (n <= 2) {
             return 1;
@@ -22,6 +22,7 @@ public class Fib{
         return fib[n];
     }
 
+    //using map - memoization
     public static int fib(int n) {
 
         if (n < 0) {
